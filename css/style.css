@@ -17,8 +17,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: var(--fundoSite);
+}
+
+/* header */
+
+.bg-header{
+    background-color: var(--fundoHero);
+
+}
 .container-header {
-    width: 80%;
+    max-width: 1170px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,7 +67,7 @@ header :is(nav, ul, li) {
     border: 1px solid green;
 }
 
-.s-display {
+.s-display-header {
     border: 1px solid green;
     width: 80%;
 }
@@ -88,3 +98,59 @@ header :is(nav, ul, li) {
     border-radius: 4px;
     border: none;
 }
+
+/* container main */
+
+.container-main {
+    border: 1px solid black;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-rows: 520px 520px 520px 260px 390px 260px 260px 520px;
+    
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* por que a brain */
+.grid-pq{    
+    grid-row: 1/2 ;
+    border: 1px solid pink;
+   
+}
+
+.l-display-because{
+    min-width: 300px;
+    max-width: 50%;
+    border: 1px solid black;
+}
+
+.l-reasons{
+    max-width: 50%;
+    border: 1px solid black;
+}
+
+
+
+/* rodape */
+
+footer {
+    color: var(--fundoSite);
+    width: 100%;
+    background-color: var(--principal);
+}
+
+.container-footer {
+    border: 1px solid white;
+    max-width: 1170px;
+    height: 294px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+}
+
+

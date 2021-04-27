@@ -49,7 +49,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
     grid-column: 1/3;
     grid-row: 1/2;
     z-index: 9999;
@@ -62,7 +61,6 @@ header :is(nav, ul, li) {
 }
 
 .l-hero {
-    border: 1px solid red;
     grid-row: 2/3;
     grid-column: 1/3;
     justify-content: space-around;
@@ -75,11 +73,9 @@ header :is(nav, ul, li) {
     display: flex;
     align-items: center;
     width: 50%;
-    border: 1px solid green;
 }
 
 .display-hero {
-    border: 1px solid green;
     min-width: var(--minWidth);
     justify-content: center;
 }
@@ -91,7 +87,6 @@ header :is(nav, ul, li) {
 /* display padrao dos textos */
 
 .display-padrao {
-    border: 1px dotted aqua;
     min-width: var(--minWidth);
     max-width: 400px;
     justify-content: center;
@@ -104,7 +99,6 @@ header :is(nav, ul, li) {
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: 1px solid blue;
     grid-column: 2/3;
 }
 
@@ -131,7 +125,6 @@ header :is(nav, ul, li) {
 /* container main */
 
 .container-main {
-    border: 1px solid black;
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -144,20 +137,16 @@ header :is(nav, ul, li) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid purple;
-    background-color: #DBC9E8;
 }
 
 .l-display-because {
     width: 50%;
     min-width: var(--minWidth);
-    border: 1px solid black;
 }
 
 .l-reasons {
     width: 50%;
     min-width: var(--minWidth);
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -170,12 +159,10 @@ header :is(nav, ul, li) {
     width: 50%;
     border-radius: 8px;
     min-width: 404px;
-    border: 1px solid yellow;
 }
 
 .display-we {
     width: 50%;
-    border: 1px solid black;
     display: flex;
     min-width: var(--minWidth);
 }
@@ -254,13 +241,47 @@ footer {
 }
 
 .container-footer {
-    border: 1px solid white;
     max-width: 1170px;
-    height: 294px;
+    height: 250px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-columns: 30% 20% 30% 20%;
 }
+
+/* rodape itens */
+.container-footer>p{
+    font-size: 14px;
+}
+
+.footer-logo,.footer-links,.footer-contatos,.footer-parcerias{
+    margin-top: 20px;
+}
+.w600{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-links{
+    margin-left: 10px;
+    display: inline-block;
+    
+}
+.footer-menu{
+    color: var(--branco);
+
+}
+.footer-menu:hover{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--secundaria);
+    color: var(--branco);
+
+}
+
+
+
+
+
 
 /* especial itens */
 
@@ -330,4 +351,16 @@ footer {
     top: 138px;
     z-index: 9999;
     z-index: 9999;
+}
+
+.logo{
+    margin-top: 10px;
+    display: grid;
+    border-radius: 50%;
+    justify-items: center;
+    align-items: center;
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    background-color: var(--principal);
 }

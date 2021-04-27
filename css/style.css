@@ -22,6 +22,15 @@ body {
     background-color: var(--fundoSite);
 }
 
+h1 {
+    font-size: 62px;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
 /* header */
 
 .bg-header {
@@ -82,18 +91,13 @@ header :is(nav, ul, li) {
 /* display padrao dos textos */
 
 .display-padrao {
-    border: 1px solid green;
+    border: 1px dotted aqua;
     min-width: var(--minWidth);
     max-width: 400px;
     justify-content: center;
 }
 
 /* display padrao dos textos */
-
-h1 {
-    font-size: 62px;
-    line-height: 60px;
-}
 
 .l-banner {
     display: flex;
@@ -135,11 +139,13 @@ h1 {
 /* por que a brain */
 
 .flex-main {
-    margin: 50px;
+    padding: 50px 0 50px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border: 1px solid purple;
+    background-color: #DBC9E8;
 }
 
 .l-display-because {
@@ -159,17 +165,85 @@ h1 {
 
 /* seção quem somos */
 
-.flex-main-we {
-    margin: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.l-banner-we {
+    margin: 50px 0 50px 0;
+    width: 50%;
+    border-radius: 8px;
+    min-width: 404px;
+    border: 1px solid yellow;
 }
 
-.l-banner-we {}
+.display-we {
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    min-width: var(--minWidth);
+}
 
-.l-display-we {}
+/* conheça nossos serviços */
+
+.display-services {
+    width: 50%;
+    min-width: var(--minWidth);
+}
+
+.l-cards-services {
+    width: 50%;
+    min-width: var(--minWidth);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.cards-services {
+    background-color: var(--principal);
+    color: var(--branco);
+    border-radius: 3px;
+    margin: 10px;
+    max-width: 468px;
+    height: 100px;
+}
+
+/* nosso time */
+
+.display-team {
+    margin-top: 50px;
+}
+
+/* portfólio */
+
+.display-portfolio {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+}
+
+.cards-portfolio {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-portfolio>img {
+    width: 300px;
+    margin: 5px;
+}
+
+/* formulário */
+
+.banner-form {
+    width: 50%;
+    min-width: var(--minWidth);
+}
+
+.form {
+    width: 50%;
+    min-width: var(--minWidth);
+}
 
 /* rodape */
 
@@ -188,7 +262,7 @@ footer {
     grid-template-columns: 30% 20% 20% 30%;
 }
 
-/* especial items */
+/* especial itens */
 
 .ellipse-full {
     background: #642373;

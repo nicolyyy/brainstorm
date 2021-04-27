@@ -241,11 +241,12 @@ footer {
 }
 
 .container-footer {
+    border: 1px solid white;
     max-width: 1170px;
-    height: 250px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 30% 20% 30% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* rodape itens */
@@ -260,22 +261,38 @@ footer {
     font-weight: 600;
     margin-bottom: 20px;
 }
-
 .footer-links{
     margin-left: 10px;
+    width: 20%;
+    min-width: 150px;
     display: inline-block;
     
 }
+.footer-logo{
+    width: 30%;
+    min-width:300px ;
+}
 .footer-menu{
     color: var(--branco);
-
+    
 }
 .footer-menu:hover{
     padding: 10px;
     border-radius: 4px;
     background-color: var(--secundaria);
     color: var(--branco);
+    
+}
+.footer-contatos{
+    width: 30%;
+    min-width: 300px;
+    
+}
 
+.footer-parcerias{
+    width: 10%;
+    min-width: 200px;
+    margin-bottom: 50px;
 }
 
 
@@ -305,6 +322,7 @@ footer {
     left: 884px;
     top: -36px;
 }
+
 
 .ellipse-purple {
     background: #642373;

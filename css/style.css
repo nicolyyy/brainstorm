@@ -75,6 +75,10 @@ header :is(nav, ul, li) {
     justify-content: center;
 }
 
+.display-hero>p {
+    margin: 20px 0 30px 0;
+}
+
 /* display padrao dos textos */
 
 .display-padrao {
@@ -225,4 +229,31 @@ footer {
     height: 55px;
     left: 810px;
     top: 195px;
+}
+
+.raio-roxo-1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 911px;
+    top: 578px;
+    z-index: 9999;
+}
+
+.raio-roxo-2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 857px;
+    top: 141px;
+}
+
+.raio-branco {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1198px;
+    top: 138px;
+    z-index: 9999;
+    z-index: 9999;
 }

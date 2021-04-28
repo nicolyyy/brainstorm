@@ -8,6 +8,9 @@
     --fundoHero: #DBC9E8;
     --minWidth: 350px;
 }
+html{
+    font-size: 62.4%;
+}
 
 * {
     margin: 0;
@@ -20,16 +23,27 @@
 
 body {
     background-color: var(--fundoSite);
+    
 }
 
 h1 {
-    font-size: 62px;
+    font-size: 6.2rem;
     line-height: 60px;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 3.4rem;
 }
+
+/* ajustar h3 */
+h3{
+    font-size: 2rem;
+}
+
+p,a,li{
+    font-size: 1.6rem;
+}
+
 
 /* header */
 
@@ -78,6 +92,7 @@ header :is(nav, ul, li) {
 .display-hero {
     min-width: var(--minWidth);
     justify-content: center;
+    z-index: 9999;
 }
 /* display padrao de texto */
 
@@ -92,6 +107,7 @@ header :is(nav, ul, li) {
     min-width: var(--minWidth);
     max-width: 400px;
     justify-content: center;
+  
 }
 
 /* display padrao dos textos */
@@ -110,6 +126,21 @@ header :is(nav, ul, li) {
     z-index: 999;
 }
 
+
+
+.btn-orcamento {
+    width: 310px;
+    height: 58px;
+    font-weight: 600;
+    background-color: var(--secundaria);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2), 8px 8px 20px rgba(239, 135, 210, 0.6), -8px -8px 20px rgba(239, 135, 210, 0.55);
+    border-radius: 4px;
+    border: none;
+}
 
 /* container main */
 .container-main {
@@ -239,7 +270,7 @@ footer {
 
 /* rodape itens */
 .container-footer>p{
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .footer-logo,.footer-links,.footer-contatos,.footer-parcerias{
@@ -373,7 +404,7 @@ footer {
 
 @media (max-width: 920px){
   
-.ellipse-full,.ellipse-dotted,.ellipse-purple,.ellipse-orange,.raio-roxo-1,.raio-branco,.logo  {
+.ellipse-full,.ellipse-dotted,.ellipse-purple,.ellipse-orange,.raio-roxo-1,.raio-roxo-2,.raio-branco,.logo  {
     display: none;
 
 }

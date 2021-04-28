@@ -370,3 +370,12 @@ footer {
     height: 70px;
     background-color: var(--principal);
 }
+
+@media (max-width: 920px){
+  
+.ellipse-full,.ellipse-dotted,.ellipse-purple,.ellipse-orange,.raio-roxo-1,.raio-branco,.logo  {
+    display: none;
+
+}
+
+}

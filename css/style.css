@@ -48,6 +48,18 @@ h4{
     color: var(--principal);
     font-weight: 600;
     font-size: 16px;
+    position: relative;
+}
+
+h4::after{
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 3.5px;
+    border-radius: 10px;
+    margin-top: calc(18px - 7.5px);
+    margin-left: 10px;
+    background-color: var( --principal);
 }
 
 p, a, li {
@@ -249,7 +261,7 @@ header :is(nav, ul, li) {
     display: flex;
     align-items:center;
     justify-content: center;
-   background-color: var(--secundaria);
+    background-color: var(--secundaria);
 }
 
 .s-reasons .purple {
@@ -301,14 +313,82 @@ header :is(nav, ul, li) {
     color: var(--branco);
     border-radius: 3px;
     margin: 10px;
-    max-width: 468px;
+    max-width: 468px; /*no prototipo o width esta em 568px */
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cards-services i{
+    color: var(--principal);
+    font-size: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 700;
+    border-radius: 52px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--branco);
 }
 
 /* nosso time */
 
 .display-team {
     margin-top: 50px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container-cards .card-team{ 
+    width: 260px;
+    height: 380px;
+    background: #EEF2D9;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(211, 133, 169, 0.521);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.container-cards .card-team img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.container-cards .card-team h3{
+    font-weight: 600;
+    color: var(--titulos);
+    font-size: 16px;
+    margin-top: 10px;
+}
+.container-cards .card-team p{
+    font-size: 13px;
+}
+.container-cards .card-team .card-links i{
+    color: rgba(55, 34, 59, 0.85);
+    /* margin-bottom: 20px; */
+    font-size: 18px;
+    margin: 0px 2px 20px 2px;
 }
 
 /* portfólio */

@@ -47,6 +47,17 @@ p, a, li {
 
 /* header */
 
+.mobile-logo {
+    display: none;
+}
+
+.s-mobile-logo {
+    background-color: var(--principal);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
 .bg-header {
     background-color: var(--fundoHero);
 }
@@ -57,6 +68,9 @@ p, a, li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 8fr;
+    padding: 0 10px;
+
+    
 }
 
 .l-header {
@@ -111,6 +125,12 @@ header :is(nav, ul, li) {
 
 /* display padrao dos textos */
 
+.l-banner::before {
+    background-color: #642373;
+    width: 50px;
+    height: 100px;
+}
+
 .l-banner {
     display: flex;
     align-items: center;
@@ -119,10 +139,14 @@ header :is(nav, ul, li) {
     grid-column: 2/3;
 }
 
+.logo-mobile {
+    display: none;
+}
+
 .s-banner {
     min-width: 300px;
     max-width: 606px;
-    z-index: 999;
+    z-index: 99;
 }
 
 .btn-orcamento {
@@ -137,6 +161,7 @@ header :is(nav, ul, li) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2), 8px 8px 20px rgba(239, 135, 210, 0.6), -8px -8px 20px rgba(239, 135, 210, 0.55);
     border-radius: 4px;
     border: none;
+    margin-bottom: 50px;
 }
 
 /* container main */
@@ -144,6 +169,8 @@ header :is(nav, ul, li) {
 .container-main {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 10px;
+
 }
 
 /* por que a brain */
@@ -405,20 +432,26 @@ footer {
     .ellipse-full, .ellipse-dotted, .ellipse-purple, .ellipse-orange, .raio-roxo-1, .raio-roxo-2, .raio-branco, .logo {
         display: none;
     }
-
     h1 {
         font-size: 5.2rem;
     }
-
-    .l-header{
+    .mobile-logo {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .s-mobile-logo {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    .l-header {
         display: none;
     }
-
-
     /* menu hamburguer  */
     .menu-hamb {
-        display: inline;         
-        position:fixed;
+        display: inline;
+        position: fixed;
         z-index: 99999;
         width: 70px;
         height: 70px;
@@ -472,12 +505,11 @@ footer {
         color: #999;
         width: 200px;
         padding: 70px;
-        margin: auto;        
+        margin: auto;
         text-align: center;
         border-radius: 4px;
         background: white;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
-
         /* ajsuar para este demo demo */
         opacity: 0;
         visibility: hidden;

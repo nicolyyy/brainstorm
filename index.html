@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">   
+
 
     <title>Brainstorm</title>
 </head>
@@ -74,6 +77,7 @@
                         <li class="nav-item">
                             <a href="#service" class="nav-link ">Serviços</a>
                         </li>
+    
                         <li class="nav-item ">
                             <a href="#portfolio" class="nav-link ">Portfólio</a>
                         </li>
@@ -82,9 +86,17 @@
                         </li>
                     </ul>
                     <ul class="social-icons">
-                        <li>ICO</li>
-                        <li>ICO</li>
-                        <li>ICO</li>
+                        <a href="https://www.facebook.com/brainstormengenharia/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                       <a href="https://www.instagram.com/brainstormengenhariajr/" target="_blank" rel="noopener noreferrer"> 
+                            <!-- <i class="fab fa-instagram-square"></i> esse icone não tá funcionando (?) -->
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"> <!--falta adicionar o link -->
+                            <i class="fab fa-linkedin"></i>
+                         </a>
+                       
                     </ul>
                 </nav>
             </div>
@@ -95,7 +107,7 @@
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
                             consequat duis enim.
                         </p>
-                        <button class="btn-orcamento">Faça seu Orçamento</button>
+                        <button class="btn-orcamento"><i class="fas fa-search"></i>Conheça nossos serviços</button>
                     </section>
                 </div>
 
@@ -131,29 +143,29 @@
                         delectus enim id itaque perspiciatis nemo minima dolorum illo esse recusandae nostrum labore
                         placeat
                         commodi eveniet ullam!</p>
-                    <button>botao</button>
+                    <button class="btn-servicos">Saiba mais sobre nós<i class="fas fa-caret-square-down"></i></button>
 
                 </div>
 
             </sectition>
             <div class="l-reasons">
-                <span class="s-reasons">
-                    <span>ico</span>
+                <span class="s-reasons ">
+                    <span class="purple">1.</span>
                     <h3>razao1</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </span>
                 <span class="s-reasons">
-                    <span>ico</span>
+                    <span>2.</span>
                     <h3>razao2</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </span>
-                <span class="s-reasons">
-                    <span>ico</span>
+                <span class="s-reasons ">
+                    <span >3.</span>
                     <h3>razao3</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </span>
                 <span class="s-reasons">
-                    <span>ico</span>
+                    <span class="purple">4.</span>
                     <h3>razao4</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </span>
@@ -170,6 +182,7 @@
             </div>
             <div class="display-we">
                 <div class="display-padrao">
+                    <h4>Sobre a Brainstorm</h4>
                     <h2>Quem Somos?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique quis velit possimus quo
                         eligendi aspernatur itaque, non obcaecati maxime labore provident. Voluptatum ab in magnam
@@ -187,6 +200,7 @@
             <div class="display-services">
                 <section class="display-padrao">
                     <div>
+                        <h4>O que criamos</h4>
                         <h2>Explore e Conheça nossos serviços</h2>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt molestiae quisquam
@@ -201,15 +215,16 @@
 
             </div>
             <section class="l-cards-services">
-                <div class="cards-services">card</div>
-                <div class="cards-services">card</div>
-                <div class="cards-services">card</div>
+                <div class="cards-services"><i class="far fa-lightbulb"></i>card</div>
+                <div class="cards-services"><i class="fas fa-tools"></i>card</div>
+                <div class="cards-services"><i class="fas fa-briefcase"></i>card</div>
             </section>
 
         </div>
 
         <!-- nosso time -->
         <section class="display-team display-padrao">
+            <h4>Nosso time</h4>
             <h2>
                 Conheça Nosso Time<br>#HardNaBrain
             </h2>
@@ -234,7 +249,7 @@
 
         <!-- Portfólio -->
         <section class="display-portfolio">
-
+            <h4>Conheça nossos projetos</h4>
             <h2>
                 Projetos Desenvolvidos
             </h2>

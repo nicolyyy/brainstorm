@@ -1,7 +1,7 @@
 :root {
     --principal: #642373;
     --secundaria: #CA537C;
-    --titulos: #261629;
+    --titulos: rgba(38, 22, 41, 1);
     --subtitulos: #37223B;
     --branco: #F5F7F3;
     --fundoSite: #F3F1F4;
@@ -29,10 +29,13 @@ body {
 h1 {
     font-size: 6.2rem;
     line-height: 60px;
+    color: var(--titulos);
+    font-weight: 700;
 }
 
 h2 {
     font-size: 3.4rem;
+    color: var(--titulos);
 }
 
 /* ajustar h3 */
@@ -41,8 +44,19 @@ h3 {
     font-size: 2rem;
 }
 
+h4{
+    color: var(--principal);
+    font-weight: 600;
+    font-size: 16px;
+}
+
 p, a, li {
     font-size: 1.6rem;
+}
+
+p:not(.footer-logo>p, .footer-contatos>p){
+    color: var(--subtitulos);
+    font-weight: 400;
 }
 
 /* header */
@@ -69,8 +83,6 @@ p, a, li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 8fr;
     padding: 0 10px;
-
-    
 }
 
 .l-header {
@@ -85,7 +97,23 @@ p, a, li {
 header :is(nav, ul, li) {
     display: flex;
     margin-left: 30px;
-    padding: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.navegation ul{
+    margin-left: 12rem;
+}
+.nav-item a{
+    color: var(--titulos);
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.social-icons i{
+    color: var(--branco);
+    font-size: 28px;
+    margin: 0 8px;
 }
 
 .l-hero {
@@ -123,6 +151,10 @@ header :is(nav, ul, li) {
     justify-content: center;
 }
 
+.display-padrao p{
+    margin: 10px 0 30px 0;
+}
+
 /* display padrao dos textos */
 
 .l-banner::before {
@@ -149,7 +181,7 @@ header :is(nav, ul, li) {
     z-index: 99;
 }
 
-.btn-orcamento {
+.btn-orcamento, .btn-servicos {
     width: 310px;
     height: 58px;
     font-weight: 600;
@@ -161,9 +193,19 @@ header :is(nav, ul, li) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2), 8px 8px 20px rgba(239, 135, 210, 0.6), -8px -8px 20px rgba(239, 135, 210, 0.55);
     border-radius: 4px;
     border: none;
-    margin-bottom: 50px;
+    font-size: 17px;
+    cursor: pointer;
 }
 
+.btn-orcamento i{
+    margin-right: 20px;
+    
+}
+
+.btn-servicos i{
+    font-size: 26px;
+    margin-left: 30px;
+}
 /* container main */
 
 .container-main {
@@ -194,6 +236,34 @@ header :is(nav, ul, li) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+}
+
+.s-reasons span:not(.purple){
+    color: var(--branco);
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 52px;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   background-color: var(--secundaria);
+}
+
+.s-reasons .purple {
+    color: var(--branco);
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 52px;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--principal);
 }
 
 /* seção quem somos */

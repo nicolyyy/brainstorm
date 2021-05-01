@@ -207,6 +207,7 @@ header :is(nav, ul, li) {
     border: none;
     font-size: 17px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .btn-orcamento i{
@@ -484,7 +485,6 @@ footer {
 }
 
 .container-footer {
-    border: 1px solid white;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -635,6 +635,9 @@ footer {
 }
 
 @media (max-width: 920px) {
+    html{
+        font-size: 50%;
+    }
     .ellipse-full, .ellipse-dotted, .ellipse-purple, .ellipse-orange, .raio-roxo-1, .raio-roxo-2, .raio-branco, .logo {
         display: none;
     }

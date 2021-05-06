@@ -354,6 +354,7 @@ header :is(nav, ul, li) {
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
+    width: 100%;
 }
 
 .container-cards .card-team{ 

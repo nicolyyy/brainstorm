@@ -346,6 +346,17 @@ header :is(nav, ul, li) {
 
 .display-team {
     margin-top: 50px;
+    min-width: var(--minWidth);
+    max-width: 800px;
+    justify-content: center;
+
+}
+
+.display-team>p{
+    margin: 10px 0;
+}
+.display-team>h2>span{
+    color: var(--principal);
 }
 
 .container-cards{
@@ -363,7 +374,7 @@ header :is(nav, ul, li) {
     background: #EEF2D9;
     border-radius: 8px;
     margin: 20px;
-    box-shadow: 0 15px 35px rgba(211, 133, 169, 0.521);
+    box-shadow: 0 2px 5px rgba(211, 133, 169, 0.521);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -752,4 +763,11 @@ footer {
         background: var(--secundaria);
         color: #fff;
     }
+    .card-links{
+        display: flex;
+        max-width: 100px;
+        justify-content: center;
+    }
 }
+
+/* cards team */

@@ -371,7 +371,7 @@ header :is(nav, ul, li) {
 .container-cards .card-team{ 
     width: 260px;
     height: 380px;
-    background: #EEF2D9;
+    background: var(--fundoHero);
     border-radius: 8px;
     margin: 20px;
     box-shadow: 0 2px 5px rgba(211, 133, 169, 0.521);

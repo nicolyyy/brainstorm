@@ -415,6 +415,37 @@ header :is(nav, ul, li) {
     justify-items: center;
 }
 
+ .btn-portfolio .fixo{
+    padding: 0 2rem;
+    height: 40px;
+    color: var(--branco);
+    background-color: var(--principal);
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    margin: 2rem 0.5rem;
+}
+
+.btn-portfolio span button{
+    padding: 0 2rem;
+    height: 40px;
+    color: var(--principal);
+    background: rgba(100, 35, 115, 0.2);
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    margin: 2rem 0.5rem;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.btn-portfolio .fixo:hover{
+    box-shadow: 0 0 6px 0 #64237388 inset, 0 0 6px 4px #64237369;
+}
+
+.btn-portfolio span button:hover{
+    box-shadow: 0 0 6px 0 rgba(100, 35, 115, 0.2) inset, 0 0 6px 4px rgba(100, 35, 115, 0.2);
+}
 .cards-portfolio {
     margin-top: 50px;
     justify-content: center;

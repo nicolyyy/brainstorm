@@ -66,9 +66,20 @@ p, a, li {
     font-size: 1.6rem;
 }
 
+
 p:not(.footer-logo>p, .footer-contatos>p){
     color: var(--subtitulos);
     font-weight: 400;
+}
+
+button{
+    transition: 0.5s ease-in-out;
+}
+button:hover{
+    outline: 0;
+    background-color: var(--principal);
+    box-shadow: 0 0 6px 0 rgba(100, 35, 115, 0.2) inset, 0 0 6px 4px rgba(100, 35, 115, 0.2);
+   
 }
 
 /* header */
@@ -314,7 +325,7 @@ header :is(nav, ul, li) {
     color: var(--branco);
     border-radius: 3px;
     margin: 10px;
-    max-width: 468px; /*no prototipo o width esta em 568px */
+    max-width: 568px; /*no prototipo o width esta em 568px */
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -402,6 +413,11 @@ header :is(nav, ul, li) {
     /* margin-bottom: 20px; */
     font-size: 18px;
     margin: 0px 2px 20px 2px;
+    transition: 0.4s ease-in-out;
+}
+
+.container-cards .card-team .card-links i:hover{
+  color: var(--secundaria);
 }
 
 /* portfólio */
@@ -446,16 +462,64 @@ header :is(nav, ul, li) {
 .btn-portfolio span button:hover{
     box-shadow: 0 0 6px 0 rgba(100, 35, 115, 0.2) inset, 0 0 6px 4px rgba(100, 35, 115, 0.2);
 }
-.cards-portfolio {
+
+.container-cards-portfolio{
     margin-top: 50px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 
-.img-portfolio>img {
-    width: 300px;
-    margin: 5px;
+.cards-portfolio {
+    width: 360px;
+    height: 360px;
+    background-color: var(--principal);
+    border-radius: 8px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 16px 20px;
+}
+
+.cards-portfolio>h3{
+    color: var(--fundoSite);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.cards-portfolio>h3::before{
+    content: "";
+    position: absolute;
+    Width: 76.52px;
+    Height: 2px;
+    border-radius: 10px;
+    margin-top: calc(15px + 1rem);
+    background-color: #FFFFFF;
+}
+
+.cards-portfolio>p{
+    color: #F5F7F3 !important;
+    font-size: 1.2rem;
+}
+
+.cards-portfolio a img {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    transition:  0.5s ease-in-out;
+}
+
+.cards-portfolio a img:hover {
+ 
+   -webkit-transform: scale(1.1);
+   overflow: hidden;
+    transform: scale(1.1);
+    padding: 0 !important;
 }
 
 /* formulário */
@@ -532,6 +596,7 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 25px 0;
     justify-content: center;
 }
 

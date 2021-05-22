@@ -226,12 +226,13 @@ header :is(nav, ul, li) {
 }
 
 .btn-orcamento i{
-    margin-right: 25px;
+    margin-right: 16px;
+    font-size: 20px;
     
 }
 
 .btn-servicos i{
-    font-size: 26px;
+    font-size: 24px;
     margin-left: 30px;
 }
 /* container main */

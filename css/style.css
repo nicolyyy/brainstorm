@@ -135,6 +135,12 @@ header :is(nav, ul, li) {
     color: var(--titulos);
     text-decoration: none !important;
     font-weight: 500;
+    transition: .4s;
+}
+
+.nav-item a:hover{
+    color: var(--secundaria);
+    transform: translateY(-8px);
 }
 
 .social-icons i{

@@ -329,7 +329,6 @@ header :is(nav, ul, li) {
 }
 
 /* conheça nossos serviços */
-
 .display-services {
     width: 50%;
     min-width: var(--minWidth);
@@ -359,6 +358,12 @@ header :is(nav, ul, li) {
     justify-content: center;
     cursor: pointer;
 }
+.fix-gab-color{
+    font-size: 16px;
+    padding: 0 20px;
+    text-align: center;
+    color: var(--branco);
+}
 
 .cards-services i{
     color: var(--principal);
@@ -375,6 +380,30 @@ header :is(nav, ul, li) {
     border-radius: 50%;
     background-color: var(--branco);
 }
+
+.toggle{
+    display: none;
+}
+.card-content{
+    
+    display: none;
+    padding: 10px;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+    height: auto !important;
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+}
+
+/* animation keyframe*/
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, .025);
+    }
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
 
 /* nosso time */
 
@@ -768,6 +797,10 @@ footer {
 
 .menu-hamb {
     display: none;
+}
+
+.fix-gab-color{    
+    color: var(--fundoSite);
 }
 
 

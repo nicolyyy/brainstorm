@@ -224,7 +224,7 @@
 
 
         <!-- serviços -->
-        <div class="flex-main" id="service">
+       <div class="flex-main" id="service">
             <div class="display-services">
                 <section class="display-padrao">
                     <div>
@@ -241,13 +241,35 @@
 
             </div>
             <section class="l-cards-services">
-                <div class="cards-services"><i class="far fa-lightbulb"></i>Soluções em T.I</div>
-                <div class="cards-services"><i class="fas fa-tools"></i>Manutenção</div>
-                <div class="cards-services"><i class="fas fa-briefcase"></i>Consultoria</div>
+                <div id="cards-container">
+                    <div>
+                        <input type="checkbox" class="toggle" id="collapsible1" onclick="collapse1()">
+                            <label for="collapsible1" class="lbl-toggle cards-services"><i class="far fa-lightbulb"></i>Soluções em T.I</label>
+
+                        <div id="card-content1" class="card-content ">
+                            <p class="fix-gab-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, massa id auctor dictum, mauris sem consequat purus, ut sollicitudin dolor nulla sed odio.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, massa id auctor dictum, mauris sem consequat purus, ut sollicitudin dolor nulla sed odio.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="toggle" id="collapsible2" onclick="collapse2()">
+                            <label for="collapsible2" class="lbl-toggle cards-services"> <i class="fas fa-tools"></i>Manutenção</label>
+
+                        <div id="card-content2" class="card-content">
+                            <p class="fix-gab-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, massa id auctor dictum, mauris sem consequat purus, ut sollicitudin dolor nulla sed odio.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="toggle" id="collapsible3" onclick="collapse3()">
+                            <label for="collapsible3" class="lbl-toggle cards-services"> <i class="fas fa-briefcase"></i>Consultoria</label>
+                        <div id="card-content3" class="card-content">
+                            <p class="fix-gab-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, massa id auctor dictum, mauris sem consequat purus, ut sollicitudin dolor nulla sed odio.</p>
+                        </div>
+                    </div>  
+                </div>
             </section>
 
         </div>
-
         <!-- nosso time -->
         <section class="display-team">
             <h4>Nosso time</h4>

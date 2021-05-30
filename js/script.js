@@ -15,6 +15,7 @@ $('.btn').on('click', function () {
     var categoria = $(this).attr('data-categoria')
     var todosCards = $('.cards-portfolio')
     $(todosCards).fadeIn(800)
+    $(this).style.backgroundColor = '#000'
 
     if (categoria == "todos") {
         $(todosCards).show()

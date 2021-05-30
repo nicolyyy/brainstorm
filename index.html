@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 
-    <title>Brainstorm</title>
+    <title>Brainstorm Engenharia</title>
 </head>
 
 <body>
@@ -247,7 +247,7 @@
                             <label for="collapsible1" class="lbl-toggle cards-services"><i class="far fa-lightbulb"></i>Soluções em T.I</label>
 
                         <div id="card-content1" class="card-content ">
-                            <p class="fix-gab-color">A Brainstorm se preocupa com o crescimento do seu negócio e para isso, nós oferecemos a construção de <strong>sites, sistemas e/ou aplicativos</strong> para o seu estabecimento. Tudo isso com um preço realmente acessível e um serviço de qualidade. </p>
+                            <p class="fix-gab-color">A Brainstorm se preocupa com o crescimento do seu negócio, e para isso, nós oferecemos a construção de <strong>sites, sistemas e/ou aplicativos</strong> para o seu estabecimento. Tudo isso com um preço realmente acessível e um serviço de qualidade. </p>
                         </div>
                     </div>
                     <div>
@@ -255,7 +255,7 @@
                             <label for="collapsible2" class="lbl-toggle cards-services"> <i class="fas fa-tools"></i>Manutenção</label>
 
                         <div id="card-content2" class="card-content">
-                            <p class="fix-gab-color">Caso você possua algum sistema existente e gostaria de <strong>personalizá-lo</strong> ou <strong>realizar algumas modificações</strong>, nós podemos ajudar nesta tarefa. Oferemos manuntenção para sites e/ou sistemas já ativos.</p>
+                            <p class="fix-gab-color">Caso você possua algum sistema existente e gostaria de <strong>personalizá-lo</strong> ou <strong>realizar modificações</strong>, nós podemos ajudar nesta tarefa. Oferemos manutenção para sites e/ou sistemas já ativos.</p>
                         </div>
                     </div>
                     <div>
@@ -604,14 +604,55 @@
                     <h2>Ficou Interessado?</h2>
                     <p>Então envia uma mensagem pra gente :)</p>
                     <form action="enviar.php" method="POST">
-                        <input class="form-control" placeholder="Informe seu nome*" type="text" name="nome">
-                        <input class="form-control" placeholder="Informe seu email*" type="email" name="email">
+                        <input class="form-control" placeholder="Informe seu nome*" type="text" name="nome" required>
+                        <input class="form-control" placeholder="Informe seu email*" type="email" name="email" required>
                         <textarea name="mensagem" placeholder="Informe a sua mensagem :)" id="" cols="30"
-                            rows="10"></textarea>
+                            rows="10" required></textarea>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
             </section>
+
+        
+        <!--gabriel, descomenta tudo aqui de baixo e faz o teste no botão-->
+
+            <!--usando o sweet alert para fazer animacao no botao de enviar-->
+                <!-- <section class="form">
+                    <div>
+                        <h2>Ficou Interessado?</h2>
+                        <p>Então envia uma mensagem pra gente :)</p>
+                        <form id="contact-form" method="POST">
+                            <input class="form-control" placeholder="Informe seu nome*" type="text" name="nome" required>
+                            <input class="form-control" placeholder="Informe seu email*" type="email" name="email" required>
+                            <textarea name="mensagem" placeholder="Informe a sua mensagem :)" id="" cols="30"
+                                rows="10" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+
+                <script type="text/javascript">
+
+                    $(document).ready(function(){
+                    $('#contact-form').on('submit',function(e) {  //Don't foget to change the id form
+                    $.ajax({
+                        url:'enviar.php', //===PHP file name====
+                        data:$(this).serialize(),
+                        type:'POST',
+                        success:function(data){
+                            console.log(data);
+                            //Success Message == 'Title', 'Message body', Last one leave as it is
+                            swal("¡Success!", "Message sent!", "success");
+                        },
+                        error:function(data){
+                            //Error Message == 'Title', 'Message body', Last one leave as it is
+                            swal("Oops...", "Something went wrong :(", "error");
+                        }
+                        });
+                        e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
+                    });
+                    });
+                </script> -->
 
         </div>
 
@@ -628,16 +669,21 @@
            
             <div class="footer-contatos">
                 <h3 class="w600">CONTATOS</h3>
-                <p>UFPA - Universidade Federal do Pará.<br>brainstormengenharia@gmail.com<br>(91) 9320-1194
+                <p>R. Augusto Corrêa, 01 - Guamá, Belém - PA, 66075-110<br>brainstorm.eng.jr@gmail.com<br>(91) 9320-1194.
                 </p>
             </div>
             <div class="footer-parcerias">
                 <h3 class="w600">PARCEIROS</h3>
-                <img src="./img/ufpa.png" alt="" width="200">
+                <img src="./img/parceiros.png" alt="Parceiros" style="background-color: aliceblue; border-radius: 2px; padding: 10px;" width="250">
             </div>
         </div>
     </footer>
     <!-- footer -->
+
+    <!--sweet alert-->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

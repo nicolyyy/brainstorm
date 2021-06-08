@@ -10,12 +10,23 @@ $(document).ready(function () {
     });
 });
 
-//logica filtro portifolio
+//logica filtro portfolio
+
+var botoesFiltros = document.querySelectorAll('.btn');
+
+function toggleButton(elemento) {
+  for (var i = 0, quantidadeBotoes = botoesFiltros.length;  i < quantidadeBotoes; i++) {
+    var verificaBotao = botoesFiltros[i] == elemento ? 'add' : 'remove';
+    botoesFiltros[i].classList[verificaBotao]('fixo');
+  }
+}
+
 $('.btn').on('click', function () {
+    
     var categoria = $(this).attr('data-categoria')
     var todosCards = $('.cards-portfolio')
     $(todosCards).fadeIn(800)
-    $(this).style.backgroundColor = '#000'
+
 
     if (categoria == "todos") {
         $(todosCards).show()

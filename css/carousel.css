@@ -35,6 +35,12 @@
   margin: 0 0 0 auto;
   text-align: center;
 }
+#skip1:focus{
+	opacity: 100%;
+}
+#skip2:focus{
+	opacity: 100%;
+}
 
 .controls__dot {
   display: inline-block;
@@ -43,7 +49,7 @@
   border-radius: 50%;
   outline: none;
   background-color: #642373;
-  opacity: 0.8;
+  opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.2s;
   
@@ -96,10 +102,10 @@ p {
 		left: -10rem;
 	}
 }
-@media screen and (max-width: 823px){
+@media screen and (max-width: 842px){
 	.controls{
 		position: relative;
-		top: -5rem;
+		top: 0;
 		left: -20rem;
 	}
 }

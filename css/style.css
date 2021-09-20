@@ -212,6 +212,7 @@ header :is(nav, ul, li) {
     min-width: var(--minWidth);
     justify-content: center;
     z-index: 9999;
+    padding-left: 2rem;
 }
 .display-hero h1{
 	font-weight: 700;
@@ -275,7 +276,7 @@ header :is(nav, ul, li) {
     z-index: 99;
 }
 
-.btn-orcamento, .btn-servicos {
+.btn-orcamento, .btn-servicos, .btn-sub{
     width: 310px;
     height: 58px;
     font-weight: 600;
@@ -290,6 +291,10 @@ header :is(nav, ul, li) {
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+.btn-sub img{
+   transform: translateX(-60%);
 }
 
 .btn-orcamento i{
@@ -1057,12 +1062,18 @@ footer {
 
 @media screen and (max-width: 920px){
 	.container-header{
-		grid-template-rows: 1fr .1fr;
+		height: 65rem;
 	}
 }
 @media screen and (max-width: 823px){
 	.container-header{
-		grid-template-rows: 1fr 1fr;
+		height: 85rem;
+	}
+	.s-banner{
+		width: 50%;
+	}
+	.icons {
+		display:none;
 	}
 }
 

@@ -8,7 +8,7 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
-  width: 85vw;
+  width: 80vw;
 }
 #second_item{
 	margin-top:-7.5rem;
@@ -98,7 +98,7 @@ p {
 @media screen and (max-width: 920px){
 	.controls{
 		position: relative;
-		top:-5rem;
+		top:0;
 		left: -10rem;
 	}
 }

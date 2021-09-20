@@ -102,34 +102,61 @@ button:hover{
 .bg-header {
     background-color: var(--fundoHero);
 }
-
+.social-icons{
+	margin-left: 1%;
+	display: flex;
+	align-items: flex-end;
+}
 .container-header {
     max-width: 1170px;
     margin: 0 auto;
     display: grid;
+    height: 50%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 4fr;
     padding: 0 10px;
 }
-
+hr{
+	border: 1px solid #642373;
+	border-radius: 8px;
+	width: 80%;
+	align-self: baseline;
+}
 .l-header {
+    margin-left:2%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     grid-column: 1/3;
     grid-row: 1/2;
+    background-color: var(--fundoHero);
+    width: 100vw;
     z-index: 9999;
 }
-
+.logoicon{
+	display: flex;
+	min-width: 100%;
+	width: 1042px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.navegation{
+	width:78%;
+	justify-content: center;
+}
+.menu{
+	align-self: center;
+}
 header :is(nav, ul, li) {
     display: flex;
     margin-left: 30px;
     padding: 4px;
     cursor: pointer;
 }
-
-.navegation ul{
-    margin-left: 12rem;
+.logomedia{
+	display: flex;
+	margin-bottom: 9px;
+	width: 76.5%;
+	margin-top: 9px;
 }
 .nav-item a{
     color: var(--titulos);
@@ -144,7 +171,7 @@ header :is(nav, ul, li) {
 }
 
 .social-icons i{
-    color: var(--branco);
+    color: var(--subtitulos);
     font-size: 28px;
     margin: 0 8px;
     transition: .3s ease-in-out;
@@ -161,20 +188,35 @@ header :is(nav, ul, li) {
     display: flex;
     flex-wrap: wrap-reverse;
 }
-
+.l-hero2{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
 .l-display {
     min-width: var(--minWidth);
     display: flex;
     align-items: center;
     width: 50%;
 }
+.l-display2 {
+    min-width: var(--minWidth);
+    display: flex;
+    align-items: center;
+    width: 50%;
 
+}
 .display-hero {
     min-width: var(--minWidth);
     justify-content: center;
     z-index: 9999;
 }
-
+.display-hero h1{
+	font-weight: 700;
+	font-size: 4rem;
+}
 /* display padrao de texto */
 
 .display-hero>p {
@@ -208,7 +250,21 @@ header :is(nav, ul, li) {
     width: 50%;
     grid-column: 2/3;
 }
-
+.l-banner2{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    grid-column: 2/3;
+}
+.icons{
+	transform: translateY(-30px);
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
 .logo-mobile {
     display: none;
 }
@@ -728,8 +784,8 @@ footer {
     border-radius: 50%;
     width: 696px;
     height: 696px;
-    left: 908px;
-    top: -72px;
+    left: 600px;
+    top: -300px;
     z-index: 1;
 }
 
@@ -739,8 +795,8 @@ footer {
     border-radius: 50%;
     width: 696px;
     height: 696px;
-    left: 884px;
-    top: -36px;
+    left: 540px;
+    top: -220px;
 }
 
 .ellipse-purple {
@@ -791,7 +847,7 @@ footer {
 }
 
 .logo {
-    margin-top: 10px;
+   margin: 0 auto;
     display: grid;
     border-radius: 50%;
     justify-items: center;
@@ -970,11 +1026,6 @@ footer {
         
     }
 
-  
-    
-    
-}
-
 @media (max-width: 480px) { 
    .display-hero h1{
     margin-top: 20px;
@@ -1003,5 +1054,17 @@ footer {
    }
   
 }
+
+@media screen and (max-width: 920px){
+	.container-header{
+		grid-template-rows: 1fr .1fr;
+	}
+}
+@media screen and (max-width: 823px){
+	.container-header{
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
 
 /* cards team */

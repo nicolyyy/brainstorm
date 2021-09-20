@@ -13,6 +13,10 @@
 
     <link rel="shortcut icon" href="./img/Logo-fundo-escuro.png" />
 
+    <!-- Carouselda hero -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+
     <!-- folha de estilos -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -30,7 +34,6 @@
 
     <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
 
     <title>Brainstorm Engenharia</title>
 </head>
@@ -67,19 +70,37 @@
         <!-- menu hamburguer -->
 
         <div class="mobile-logo">
-            <div class="s-mobile-logo">
+		    <div class="s-mobile-logo">
                 <img src="img/logo-mobile.png" alt="computador com logo no fundo" class="" width="100px">
             </div>
         </div>
 
         <header class="container-header" id="home">
             <div class="l-header">
+		    <div class = "logomedia">
+<ul class="social-icons">
+                        <a href="https://www.facebook.com/brainstormengenharia/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/brainstormengenhariajr/" target="_blank"
+                            rel="noopener noreferrer">
+                            <!-- <i class="fab fa-instagram-square"></i> esse icone não tá funcionando (?) -->
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/brainstorm-engenharia-jr/" target="_blank"
+                            rel="noopener noreferrer">
+                            <!--falta adicionar o link -->
+                            <i class="fab fa-linkedin"></i>
+                        </a>
 
+                    </ul>
                 <div class="logo">
                     <a href="index.html"> <img src="./img/logobranca.png" class="" width="50"></a>
 
                 </div>
-
+	    </div>
+		<hr>
                 <nav class="navegation">
                     <ul class="menu">
                         <li class="nav-item">
@@ -99,25 +120,74 @@
                             <a href="#formulario" class="nav-link ">Contato</a>
                         </li>
                     </ul>
-                    <ul class="social-icons">
-                        <a href="https://www.facebook.com/brainstormengenharia/" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="https://www.instagram.com/brainstormengenhariajr/" target="_blank"
-                            rel="noopener noreferrer">
-                            <!-- <i class="fab fa-instagram-square"></i> esse icone não tá funcionando (?) -->
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/brainstorm-engenharia-jr/" target="_blank"
-                            rel="noopener noreferrer">
-                            <!--falta adicionar o link -->
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+               </nav>
+			    </div>
+			    <div class="wrapper">
+  <div class="carousel-container">
+    <div class="carousel">
+      <div id="skyline" class="carousel__item">
+<div class="ellipse-full"></div>
+        <div class="ellipse-dotted"></div>
+           <div class="l-hero">
+                <div class="l-display">
+                    <section class="display-hero">
+                        <h1>Nós incentivamos suas ideias</h1>
+                        <p>Conheça nossas soluções em desenvolvimento web e mobile. Entre em contato com a gente para
+                            fazer seu orçamento.
+                        </p>
+                        <a href="#formulario"> <button class="btn-orcamento"> <i class="far fa-calendar-check"></i>Quero
+                                agendar uma reunião</button></a>
+                    </section>
+                </div>
 
-                    </ul>
-                </nav>
+                <div class="l-banner">
+                    <img src="img/hero.png" alt="computador com logo no fundo" class="s-banner">
+                </div>
+
             </div>
+      </div>
+      <div id="second_item" class="carousel__item">
+<div class="l-hero2">
+                <div class="l-display2">
+                    <section class="display-hero">
+                        <h1>Quer aprender a programar?</h1>
+                        <p>Dê os seus primeiros passos na programação com um curso que se preocupa em te preparar para entrar no mercado de trabalho 
+                            
+                        </p>
+                        <a href="#formulario"> <button class="btn-orcamento"> <i class="far fa-calendar-check"></i>
+                                Inscreva-se</button></a>
+                    </section>
+                </div>
+
+                <div class="l-banner2">
+                    <img src="img/Work time-amico 1.svg" alt="computador com logo no fundo" class="s-banner">
+		    <div class="icons">
+			    <img src="img/jS.svg" alt="">
+			    <img src="img/html5-brands 1.svg" alt="">
+			    <img src="img/css3-alt-brands 1.svg" alt="">
+		    </div>
+                </div>
+
+            </div>
+      </div>
+    </div>
+  <!--  
+    <div id="controls" class="controls">
+      <a href="#skyline" class="controls__dot">
+      </a>
+      <a href="#second_item" class="controls__dot">
+      </a>
+    </div>
+  -->
+  </div>
+  <div id="controls" class="controls">
+      <a href="#skyline" class="controls__dot">
+      </a>
+      <a href="#second_item" class="controls__dot">
+      </a>
+    </div>
+</div>
+<!--
             <div class="l-hero">
                 <div class="l-display">
                     <section class="display-hero">
@@ -135,12 +205,14 @@
                 </div>
 
             </div>
-
+-->
         </header>
+	<!--
         <div class="ellipse-full"></div>
         <div class="ellipse-dotted"></div>
         <div class="ellipse-purple"></div>
         <div class="ellipse-orange"></div>
+	-->
         <span class="raio-roxo-1"><img src="./img/r1.png" alt=""></span>
         <span class="raio-roxo-2"><img src="./img/r1.png" alt=""></span>
         <span class="raio-branco"><img src="./img/r2.png" alt=""></span>
@@ -698,11 +770,16 @@
         crossorigin="anonymous"></script>
 
     <!-- script -->
-
+    <script src="js/hero.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/toggler.js"></script>
 
+    <!-- Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
 </body>
 
 </html>

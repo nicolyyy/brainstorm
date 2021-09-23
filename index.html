@@ -13,6 +13,12 @@
 
     <link rel="shortcut icon" href="./img/Logo-fundo-escuro.png" />
 
+    <!-- JS Swipper -->
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link                                                                                                                     rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- folha de estilos -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -118,6 +124,31 @@
                     </ul>
                 </nav>
             </div>
+	    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+	<div class="l-hero">
+                <div class="l-display">
+                    <section class="display-hero">
+                        <h1>Nós incentivamos suas ideias</h1>
+                        <p>Conheça nossas soluções em desenvolvimento web e mobile. Entre em contato com a gente para
+                            fazer seu orçamento.
+                        </p>
+                        <a href="#formulario"> <button class="btn-orcamento"> <i class="far fa-calendar-check"></i>Quero
+                                agendar uma reunião</button></a>
+                    </section>
+                </div>
+
+                <div class="l-banner">
+                    <img src="img/hero.png" alt="computador com logo no fundo" class="s-banner">
+                </div>
+
+            </div>
+	</div>
+        <div class="swiper-slide">Slide 2</div>
+      </div>
+    </div>
+	    <!--
             <div class="l-hero">
                 <div class="l-display">
                     <section class="display-hero">
@@ -135,7 +166,10 @@
                 </div>
 
             </div>
-
+	    -->
+	    <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+ 
         </header>
         <div class="ellipse-full"></div>
         <div class="ellipse-dotted"></div>
@@ -533,21 +567,21 @@
         </section>
 
 
-        <!-- Portfólio -->
-        <section class="display-portfolio" id="portfolio">
-            <h4>Conheça nossos projetos</h4>
-            <h2>
-                Projetos desenvolvidos
-            </h2>
-            <p>Agora que você sabe um pouco sobre nós, que tal conhecer alguns dos projetos desenvolvidos pelos membros
-                da empresa? </p>
-            <div class="btn-portfolio">
-                <span><button  onClick="toggleButton(this)" class="btn fixo" data-categoria="todos">TODOS</button></span>
-                <span><button onClick="toggleButton(this)" class="btn blog" data-categoria="blog">BLOG</button></span>
-                <span><button onClick="toggleButton(this)" class="btn ecommerce" data-categoria="ecommerce">E-COMMERCE</button></span>
-                <span><button onClick="toggleButton(this)" class="btn landing" data-categoria="landing">LANDING PAGE</button></span>
-                
-            </div>
+	<!-- Portfólio -->
+	<section class="display-portfolio" id="portfolio">
+		<h4>Conheça nossos projetos</h4>
+		<h2>
+			Projetos desenvolvidos
+		</h2>
+		<p>Agora que você sabe um pouco sobre nós, que tal conhecer alguns dos projetos desenvolvidos pelos membros
+		da empresa? </p>
+		<div class="btn-portfolio">
+			<span><button  onClick="toggleButton(this)" class="btn fixo" data-categoria="todos">TODOS</button></span>
+			<span><button onClick="toggleButton(this)" class="btn blog" data-categoria="blog">BLOG</button></span>
+			<span><button onClick="toggleButton(this)" class="btn ecommerce" data-categoria="ecommerce">E-COMMERCE</button></span>
+			<span><button onClick="toggleButton(this)" class="btn landing" data-categoria="landing">LANDING PAGE</button></span>
+
+		</div>
 
 
 
@@ -702,7 +736,21 @@
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/toggler.js"></script>
 
-
+    <!-- JSswipper script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type = "text/javascript">
+var swiper = new Swiper(".mySwiper", {
+        cssMode: true,                                                                                                          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+  </script>
 </body>
 
 </html>

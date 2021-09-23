@@ -107,7 +107,7 @@ button:hover{
     max-width: 1170px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr;
     grid-template-rows: 1fr 8fr;
     padding: 0 10px;
 }
@@ -160,6 +160,7 @@ header :is(nav, ul, li) {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap-reverse;
+    text-align: left;
 }
 
 .l-display {
@@ -730,7 +731,7 @@ footer {
     height: 696px;
     left: 908px;
     top: -72px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .ellipse-dotted {
@@ -1004,4 +1005,10 @@ footer {
   
 }
 
+@media (max-width:920px){
+	.container-header{
+		margin-top: 9rem;
+		grid-template-rows: 1fr 0.5fr;
+	}
+}
 /* cards team */

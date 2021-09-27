@@ -155,7 +155,7 @@ header :is(nav, ul, li) {
     filter: opacity(.7);
 }
 
-.l-hero {
+.l-hero, .l-hero2{
     grid-row: 2/3;
     grid-column: 1/3;
     justify-content: space-around;
@@ -1050,6 +1050,15 @@ footer {
 	}
 	.jshtmlcss{
 		display: none;
+	}
+}
+@media (max-width:777px){
+	.l-hero2{
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+	.l-banner-2hero{
+		margin: 0 auto;
 	}
 }
 /* cards team */

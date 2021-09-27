@@ -7,6 +7,7 @@
     --fundoSite: #F3F1F4;
     --fundoHero: #DBC9E8;
     --minWidth: 350px;
+    --swiper-theme-color: #E6759C;
 }
 
 html {
@@ -170,7 +171,7 @@ header :is(nav, ul, li) {
     width: 50%;
 }
 
-.display-hero {
+.display-hero,.display-hero2 {
     min-width: var(--minWidth);
     justify-content: center;
     z-index: 9999;
@@ -178,8 +179,33 @@ header :is(nav, ul, li) {
 
 /* display padrao de texto */
 
+.display-hero2>p{
+    margin: 20px 0 30px 0;
+}
+
 .display-hero>p {
     margin: 20px 0 30px 0;
+}
+
+.l-banner-2hero{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	transform: translateY(-15%);
+}
+
+.jshtmlcss{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.jshtmlcss img{
+	width: 20%;
+}
+.jshtmlcss img:nth-child(1){
+	height: 77%;
+	transform: translate(10px, 10px);
 }
 
 /* display padrao dos textos */
@@ -220,7 +246,7 @@ header :is(nav, ul, li) {
     z-index: 99;
 }
 
-.btn-orcamento, .btn-servicos {
+.btn-orcamento, .btn-servicos,.btn-subs {
     width: 310px;
     height: 58px;
     font-weight: 600;
@@ -242,6 +268,12 @@ header :is(nav, ul, li) {
     font-size: 20px;
     
 }
+
+.btn-subs i {
+    margin-right: 16px;
+    font-size: 20px;
+}
+
 
 .btn-servicos i{
     font-size: 24px;
@@ -1005,10 +1037,19 @@ footer {
   
 }
 
+@media (max-width: 1230px){
+	.container-header{
+		padding: 0 5%;
+	}
+}
+
 @media (max-width:920px){
 	.container-header{
 		margin-top: 9rem;
 		grid-template-rows: 1fr 0.5fr;
+	}
+	.jshtmlcss{
+		display: none;
 	}
 }
 /* cards team */

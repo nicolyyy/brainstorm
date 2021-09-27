@@ -145,7 +145,31 @@
 
             </div>
 	</div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide"> 
+<div class="l-hero">
+                <div class="l-display">
+                    <section class="display-hero">
+                        <h1>Quer aprender a programar?</h1>
+                        <p> 
+                            .Dê os seus primeiros passos na programação com um curso que se preocupa
+em te preparar para entrar no mercado de trabalho! 
+                        </p>
+                        <a href="#formulario"> <button class="btn-subs"> <i class="fas fa-sign-out-alt"></i> Inscreva-se
+                               </button></a>
+                    </section>
+                </div>
+
+                <div class="l-banner-2hero">
+                    <img src="img/Work-time-amico-1.webp" alt="computador com logo no fundo" class="s-banner-2hero">
+		    <div class = "jshtmlcss" >
+		    	<img src="img/Vector.webp" alt="">
+		    	<img src="img/html5-brands-1.webp" alt="">
+		    	<img src="img/css3-alt-brands-1.webp" alt="">
+		    </div>
+                </div>
+
+            </div>
+	</div>
       </div>
     </div>
 	    <!--
@@ -167,8 +191,8 @@
 
             </div>
 	    -->
-	    <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next swipping-button "></div>
+      <div class="swiper-button-prev swipping-button "></div>
  
         </header>
         <div class="ellipse-full"></div>
@@ -749,6 +773,10 @@ var swiper = new Swiper(".mySwiper", {
         },
         mousewheel: true,
         keyboard: true,
+
+        observer: true,
+        observeParents: true,
+        parallax:true,
       });
   </script>
 </body>

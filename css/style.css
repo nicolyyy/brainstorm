@@ -1061,4 +1061,12 @@ footer {
 		margin: 0 auto;
 	}
 }
+@media screen and (max-width: 420px){
+	.display-hero > p {
+		width: 90%;
+	}
+	.l-hero2 > .l-display > .display-hero > h1{
+		width: 90%;
+	}
+}
 /* cards team */
